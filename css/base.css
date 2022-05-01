@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 4px dotted rgba(224, 199, 169, 0.849);
+	width:auto;
+}
+
+footer p, figcaption, figure, video {
+    text-align:center; 
+   }
+
+body { 
+	font-family: Arial, Verdana, sans-serif; 		
+}   
+
+html {
+	background-color:lightblue;
+  background-image:url("../media/FastFoodBackground.jpg"); 
+	background-repeat:repeat;
+}
+
+body {
+	background-color:whitesmoke;
+	width:80%;
+	max-width:1000px;
+	min-width:500px;
+	padding:0 20px 20px 20px; 
+	margin:20px auto;
+	border:0px dotted  gray;
+	box-shadow:0 0 30px black;	
+}
+/* font sizes  */
+
+h1 {
+	font-size: 2.5em; 
+	}
+  
+h2 {
+	font-size: 1.875em; 
+	
+  }
+h3 {
+	font-size: 1.3em;
+}
+ 
+p {
+	font-size: 1em; /* 1em = 16px */
+  }
+
+/* font style */
+ 
+ h1 {
+	 font-variant:small-caps;
+	 letter-spacing:4px;	
+	 text-align: center;
+	 background-color: lightblue;
+	 border-radius: 5px;
+   font-family: 'Oswald', sans-serif;
+	 text-shadow: 3px 3px 3px #cccccc;
+ }
+ 
+ h2 {
+	text-shadow: 3px 3px 3px #cccccc;
+	font-family: 'Oswald', sans-serif;
+ }
+
+ p {
+	line-height:1.5em; 	
+}
+
+ a {
+	text-transform:uppercase;		
+ }
+
+ p {
+	 text-indent:1em		
+	}
+
+ p:first-of-type {
+	 text-indent:0			
+}
+figcaption {
+	font-weight:bold;		
+ }
+
+/* text postions */
+
+.listp {
+	text-align: center;
+}
+
+/* colors */
+
+h3 {
+	color: rgb(100, 195, 226);				
+  	}
+ 
+/* */
+
+body, header {border-radius:5px;}
+
+img {
+	width:90%; 
+	height:auto;
+	border-radius:10px;
+	margin:0;
+}
+
+figure, video {
+	margin:10px auto;
+	padding:10px;
+	border-radius:20px;
+	width:50%;
+	max-width:700px;	
+	display:block;
+}
+
+figure {
+	break-inside: avoid;
+} 
+
+header{
+		color:white;
+		margin:0px 0px 20px 0px;
+		padding: 0px;
+		background-color: lightgrey;
+}
+
+.menu-area li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 0 30px;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.menu-area li {
+    display: inline-block;
+}
+
+.custom {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+nav {
+    position: relative;
+    padding: 5px;
+    text-align: center;
+    z-index: 1;
+    background: transparent;
+    margin: 0 auto;
+}
+
+.line-menu-style::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width .3s;
+}
+
+.line-menu-style:hover::after {
+    width: 100%;
+    transition: width .5s;
+}
+
+#menubar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-menu {
+  margin-right: 50px;
+}
+
+.mainmenu li:hover a {
+  color: rgb(68, 149, 175);
+}
+
+#logo {
+	height: 150px;
+	width: 150px;
+} 
+
+.history {
+  display: flex;
+}
+
+/* ol list number design */
+ol {
+    counter-reset: li;
+    text-align: center;
+    list-style: none;
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  }
+
+  .custom-counter a{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 0;
+    text-decoration: underline;
+    border-radius: .3em;
+	background-color: rgba(224, 199, 169, 0.849);
+	height: 20px;
+	width: 20%;
+  }
+  .custom-counter a:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+	  margin-left: 10px;
+    background: #87ceeb;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid rgba(224, 199, 169, 0.849);
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+  }
+
+/* form */
+fieldset {
+	border-radius: 5px;
+	width:70%;
+	min-width:450px;
+	background-color:rgba(224, 199, 169, 0.849);
+	margin-bottom:10px;
+}
+
+  /* skip part */
+  .screenreader a {position: absolute; left: -9999px;}
+  .screenreader a:focus{position: static; background: white;}
+  
+/* table for list fastfood */
+#table1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+#table1 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: lightblue;
+    color: black;
+}
+#table1 td, #table1 th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.f1 img {
+    width: 100%;  
+    height: 300px;
+    min-width: 50%;
+    min-height: 150px;
+    margin: 0 auto;
+    object-fit: cover;
+
+}
+
+/* table for pros and cons */
+#ftable {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+}
+#ftable th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: center;
+	background-color: lightblue;
+	color: black;
+  }
+#ftable td, #ftable th {
+	border: 1px solid black;
+	padding: 8px;
+  }
+
+#ftable tr:nth-child(even){background-color: #f2f2f2;}
+
+#ftable tr:hover {background-color: #ddd;}
+
+/* line design*/
+hr {
+	border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* top chains */
+.subway {
+	border: 3px dashed lightblue;
+	padding: 20px 40px 40px;
+	max-width: 640px;
+	display: flex;
+  }
+.subway_img {
+	margin: 20px 30px 0 0;
+    width: 250px;
+    object-fit: contain;
+    align-self: flex-start;
+}
+.subway_p {
+	flex: 1 1 auto;
+
+}
+.mcdonalds {
+	border: 3px dashed lightblue;
+	padding: 20px 40px 40px;
+	max-width: 640px;
+	display: flex;
+	margin-left: auto;
+  }
+.mcdonalds_img {
+	margin: 20px 30px 0 0;
+    width: 250px;
+    object-fit: contain;
+    align-self: flex-start;
+}
+.mcdonalds_p {
+	flex: 1 1 auto;
+}
+
+.burgerking {
+	border: 3px dashed lightblue;
+	padding: 20px 40px 40px;
+	max-width: 640px;
+	display: flex;
+  }
+.burgerking_img {
+	margin: 20px 30px 0 0;
+    width: 250px;
+    object-fit: contain;
+    align-self: flex-start;
+}
+.burgerking_p {
+	flex: 1 1 auto;
+}
+
+/* top fast food chain list */
+#pagelist ul {
+  /*-webkit-column-count: 3;
+  -moz-column-count: 3; */
+  column-count: 3;
+	column-gap: 100px;
+	margin: auto;
+	text-align: justify;
+}
+#pagelist ul {
+	list-style: none;
+  }
+#pagelist ul li::before{
+	content: "🍴";
+	display: inline-block;
+}
+
+/* My fav fast food photos */
+
+article#myfav figure:nth-of-type(1){
+  bottom: 20px;
+  right: 40px;
+  transform: rotate(9deg);
+}
+article#myfav figure:nth-of-type(2){
+  bottom: 20px;
+  left: 30px;
+  transform: rotate(10deg);
+}
+article#myfav {
+position: relative;
+padding-bottom: 420px;
+}
+article#myfav figure img {
+  border: 1px dashed rgba(224, 199, 169, 0.849);
+}
+
+article#myfav figure{ 
+  border: 1px dotted rgba(224, 199, 169, 0.849);
+  width: 400px;
+  padding: 30px;
+  position: absolute;
+  margin: 0;
+  background-color:lightblue;
+  text-align: center;
+  transition: background linear 1s;
+  border-radius:5px;
+}
+
+article#myfav figure:hover {
+  border: 3px solid lightblue;
+  z-index: 10;
+  background-color: rgba(224, 199, 169, 0.849);;
+}
+
+article#myfav figure:hover img {
+  border: 0;
+}
+ 
+/* history image part */
+.history {
+	padding: 20px 40px 40px;
+	max-width: 940px;
+	display: flex;
+  }
+.history_img {
+	  margin: 20px 30px 0 0;
+    width: 280px;
+    object-fit: contain;
+    align-self: flex-start;
+}
+.history_p {
+	flex: 1 1 auto;
+}
+
+/* video width height */
+video {
+	width: 100%;
+	height: auto;
+  }
+
+/* print part */
+  @media print {
+	
+	@page {
+		margin: 2cm;
+	 }
+	html {
+		background:white;
+		 }
+	body {
+		width:100%;
+		font-family:'Times New Roman', Times, serif; 
+		background:white;
+		min-width:initial;
+		max-width:initial;
+		box-shadow:initial;
+	}
+		#menubar {
+			display:none;
+		}	
+
+    article#myfav {page-break-before:always}
+    h2#history {page-break-before:always}
+    p.last {page-break-before:always}
+    section.video1{page-break-before: always;}
+    .mcdonalds{page-break-before: always;}
+    .burgerking{page-break-before: always;}
+
+    article#myfav figure {
+      position: static;
+      margin: auto;
+  }
+
+  article#myfav {
+      padding-bottom: 30px;
+  } 
+
+		a:after 
+		{ 
+			content: " (" attr(href) ")";
+		}  
+		
+}
+/* check box part with javascript (jquery)*/
+
+    .content{
+    padding:10px;
+    width:400px
+    }
+    .left{
+    width:800px;
+    float:left;
+    padding:7px 0px 0px 7px;
+    min-height: 24px;
+    display: flex;
+    }
+    .right{
+    width:200px;
+    float:left;
+    padding:5px;
+    min-height:24px;
+    }
+    .clear{
+    float:none;
+    clear:both;
+    height:0px;
+    }
+    .row{
+    display:block;
+    min-height:32px;
+    }
+    .text{
+    width:250px;
+    }
+    .ruler{
+    width:500px; border-bottom:dashed 1px #dcdcdc;
+    }
+    tr:focus{
+    background-color:#fcfcf0;
+    }
+    td{
+    vertical-align:top;
+    }
+    .over{
+    background-color: white;
+    }
+
+    #short-history-info {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+  /* Break points */
+
+  @media only screen and (min-width : 440px) and (max-width : 767px){
+
+    #menubar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #main-menu {
+      max-width: 300px;
+    }
+
+    .history {
+      display: flex;
+      flex-direction:column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+
+   /* .fast-food-info {
+      font-size: smaller;
+    } */
+
+    .important-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    article#myfav figure {
+      position: static;
+      margin: auto;
+  }
+
+  article#myfav {
+      padding-bottom: 30px;
+  } 
+
+
+  }
+  @media only screen and (min-width : 768px) and (max-width : 1024px){
+  
+    #main-menu {
+      max-width: 300px;
+    }
+
+    #short-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+     .important-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } 
+
+    #short-info1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    #short-info2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    } 
+   
+    .history {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+
+    article#myfav figure {
+      position: static;
+      margin: auto;
+  }
+
+  article#myfav {
+      padding-bottom: 30px;
+  } 
+}

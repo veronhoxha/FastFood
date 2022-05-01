@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+ <html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Favorite fast food form</title>
+		<link href="css/base.css" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="scripts/form.js"></script>
+		<link rel="icon" href="media/Burger.ico">
+	</head>
+	<body>
+		<header>
+			<div id="menubar">
+				<div class="screenreader">
+					<a href="#content">Skip to Main content</a>
+				</div>
+				<div id="fast-food-image">
+					<img id="logo" src="media/BurgerLogo.png" alt="Burger logo"> 
+				</div>
+				<div id="main-menu">
+					<nav>
+						  <ul class="mainmenu menu-area">
+							  <li><a href="index.html" class="line-menu-style">Home</a></li>
+							  <li><a href="prosandcons.html" class="line-menu-style">Pros and cons</a></li>
+							  <li><a href="list.html" class="line-menu-style">List</a></li>
+							  <li><a href="topfastfoodchains.html" class="line-menu-style">Top chains</a></li>
+							  <li><a href="form.html" class="line-menu-style">Form</a></li>
+							</ul>
+					  </nav>
+				</div>
+			</div>
+		</header>	
+	<main id="content">
+		<h1>Form</h1>
+	<div id="introduction">
+		<h2 class="important-header"><i>Tell us about your experience with Fast Food</i></h2>
+<p>You must have eaten for at least one time in your life fast food and maybe even have a favorite one, if yes, then please fill in this short form below.</p>
+</div>
+	
+<form action="mailto:veronhoxha.com" method="post" enctype="text/plain">
+<fieldset>
+	<legend>Favorite Fast food sheet</legend>
+	<label for="name"><strong>Name</strong></label><br>
+	<input type="text" name="name" id="name" size="60"><br>
+	<label for="age"><strong>Age</strong></label><br>
+    <input type="number" name="age" id="age" min="0"><br>
+    <label for="email"><strong>E-mail address</strong></label><br>
+	<input type="email" name="email" id="email" size="60"><br>
+</fieldset>
+<fieldset>
+    <p><strong>Which is/are your favorite fast food chain/s in the world?</strong><br>
+	<input type="checkbox" name="brand" id="b" value="Mc Donald's">
+	<label for="b">Mc Donald's</label>
+    <input type="checkbox" name="brand1" id="b1" value="Subway">
+	<label for="b1">Subway</label>
+    <input type="checkbox" name="brand2" id="b2" value="KFC">
+	<label for="b2">KFC</label>
+    <input type="checkbox" name="brand3" id="b3" value="Burger King">
+	<label for="b3">Burger King</label>
+    <input type="checkbox" name="brand4" id="b4" value="Other">
+	<label for="b4">Other</label>
+	<br>
+	<label for="otherbrand">If you choose "other", please tell us which other chains/brands.</label><br>
+	<input type="text" name="otherbrand" id="otherbrand" size="60"><br>
+    </p>
+</fieldset>
+<fieldset>
+	<p><strong>Are you addicted to fast food?</strong><br>
+      <input type="radio" name="addicted" id="q1" value="Yes">
+      <label for="q1">Yes</label>
+      <input type="radio" name="addicted" id="q2" value="Maybe">
+      <label for="q2">Maybe</label>
+      <input type="radio" name="addicted" id="q3" value="No">
+      <label for="q3">No</label>
+    </p>
+</fieldset>	
+<fieldset>
+<label for="favoritefastfood"><strong>What’s your favorite fast food you ever ate, can you tell something special about it? </strong></label><br>
+<textarea cols="60" rows="10" name="favoritefastfood" id="favoritefastfood" placeholder="Write a few sentences about it!"></textarea>
+</fieldset>
+<br>
+<fieldset>
+<input type="button" id="button" value="Click me if u liked my website"> 
+<input type="text" name="website" id="txt1">
+
+<div class="content">
+    <div class="row">
+	<label class="left">I'd would like to recieve news about fast food
+		<input type="checkbox" name="news" id="a1" value="Yes I want to recieve news">
+		<span class="right"></span>
+	</label>
+	</div>	
+    </div>
+</fieldset>
+<fieldset>
+	<legend>Send From</legend>
+	<input type="submit" value="Submit Form">
+	<input type='reset' value="Reset From">
+</fieldset>
+</form>
+
+
+<p class="last">If you are interested to know which are my favourite fast food brands you can look at the list below.</p>
+	<nav>
+		<ol class="custom-counter">
+			<li><a href="topfastfoodchains.html#subway">Subway</a></li>
+			<li><a href="topfastfoodchains.html#mcdonalds">Mc Donald's</a></li>
+			<li><a href="topfastfoodchains.html#burgerking">Burger King</a></li>
+		</ol>
+	</nav>	
+</main>
+<hr>
+<footer>
+	<address>
+	<p>Author: Veron Hoxha<br>
+	Budapest 1053, Kossuth Lajos utca</p>
+	</address>
+	</footer>
+
+</body>
+</html>
