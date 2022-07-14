@@ -1,4 +1,4 @@
-# FastFood
+# fast-food
 
 - The website is static and also responsive.
 
